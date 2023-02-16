@@ -316,6 +316,7 @@ nav#subMenu {
 }
  .mePic img {
      width: 58%;
+     height: 58%;
 }
  section.myWork{
      transition: ease all .25s;
