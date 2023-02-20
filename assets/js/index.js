@@ -17,6 +17,11 @@ $(document).ready(function(){
    
   });
 
+  $("button#insights3").click(function(){
+    $("#keyInfo4").slideToggle("slow");
+   
+  });
+
 });   
    
   

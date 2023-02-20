@@ -28,6 +28,7 @@ div#sub-navbarNav {
  h4 {
      text-transform: uppercase;
      font-weight: 300;
+     margin-top: 1em;
 }
  .navListItems a{
      color:#fff;
@@ -75,6 +76,9 @@ nav#subMenu {
     display: block;
 }
 
+.case-study-upperBlock-block-stepsBlock img{
+    margin: 3em 0 3em 0;
+}
 
  a.nav-link{
      padding: 0 2.5em 0 0;
@@ -216,18 +220,21 @@ nav#subMenu {
      display: block;
      margin: auto;
 }
- .myWork h3 {
+ .myWork h3, .myWork-dc h3 {
      text-align: center;
      font-size: 32px;
      font-weight: 500;
      margin: 0 0 0 0;
 }
- .myWork p {
+ .myWork p, .myWork-dc p {
      text-align: center;
      font-size: 24px;
      margin: 8px 0 8px 0;
      padding: 0;
      line-height: 36px;
+}
+.myWork-dc h3, .myWork-dc p{
+    text-align: left;
 }
  ul.projectDetails li {
      font-weight: 500;
@@ -611,11 +618,16 @@ nav#subMenu {
      font-size: 40px;
      position: relative;
 }
- header.case-study-mainHeader {
+ header.case-study-mainHeader, header.case-study-mainHeader-dc {
      background: url(images/DOE-HERO-IMAGE.png) 50% bottom no-repeat;
      background-size: cover;
      height: 100vh;
 }
+
+header.case-study-mainHeader-dc{
+    background: url(images/DC-HERO-IMAGE.png) 50% bottom no-repeat;
+}
+
  h1.case-study-headerBody{
      color: #fff;
      text-align: left;
@@ -687,6 +699,12 @@ nav#subMenu {
      display: block;
      margin: 2em auto;
 }
+
+img.CS-logo-dc {
+    max-width: 500px;
+    display: block;
+    margin: 2em auto;
+}
  .case-study-intro{
      display:grid;
      grid-gap:32px;
@@ -695,6 +713,12 @@ nav#subMenu {
      justify-content:center;
      align-content:center;
     /*grid-template-areas: "problem problem" "solution solution" "team tools"*/
+}
+img.dc-problem {
+
+    display: block;
+    margin: auto;
+    width: 100%;
 }
  .problem{
      grid-column: span 2;
@@ -718,17 +742,31 @@ nav#subMenu {
      margin: 0 0 0 0;
      color:#666666;
 }
- .case-study-intro ul {
+
+.container.case-study-dc {
+    
+    margin: 3em auto;
+}
+ .case-study-intro ul, .case-study-dc ul {
      list-style-type: none;
      padding: 0;
      margin: 0;
 }
- .case-study-intro li {
+ .case-study-intro li, .case-study-dc li {
      list-style-type: none;
      padding: 0 0 8px 0;
      font-size: 24px;
      color:#333;
 }
+
+.case-study-dc li {
+    list-style-type:disc;
+    padding: 0 0 8px 0;
+    margin-left: 3em;
+    font-size: 16px;
+    color: #333;
+}
+
  .role {
      width: 60%;
 }
@@ -748,7 +786,7 @@ nav#subMenu {
      position: relative;
      width: 25%;
 }
- .stepsBlock h2 {
+ .stepsBlock h2, .stepsBlock-dc h2 {
      font-weight: 200;
      font-size: 48px;
      margin: 0;
@@ -757,14 +795,27 @@ nav#subMenu {
      position: relative;
      display:inline-block;
 }
- .stepsBlock h3 {
+ .stepsBlock h3, .stepsBlock-dc h3 {
      font-size: 32px;
      font-weight: 200;
      margin: 16px 0 0 0;
      padding: 0;
      position: relative;
 }
- .stepsBlock h2::after {
+
+.stepsBlock-dc h3 {
+    margin: 32px 0 0 0;
+ 
+}
+
+.stepsBlock-dc h2, .stepsBlock-dc h3{
+    font-size: 32px;
+}
+.stepsBlock-dc h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+ .stepsBlock h2::after, .stepsBlock-dc h2::after {
      content: "";
      width: 100%;
      position: absolute;
@@ -792,7 +843,7 @@ nav#subMenu {
      bottom: 6px;
      border-radius: 16px;
 }
- .case-study-pageWrapper2 {
+ .case-study-pageWrapper2, .case-study-pageWrapper-dc {
      background: url(images/USER-RESEARCH-BG.png);
      color: #fff;
      transition: ease all .5s;
@@ -800,16 +851,22 @@ nav#subMenu {
      background-repeat: no-repeat;
      background-position: 50%,50%;
 }
- .case-study-pageWrapper2 {
+ .case-study-pageWrapper2, .case-study-pageWrapper-dc  {
      padding-bottom: 4em;
      padding-top: 5.75em;
 }
- .case-study-pageWrapper2 {
+ .case-study-pageWrapper2, .case-study-pageWrapper-dc  {
      padding-top: 5.25em;
 }
- .case-study-pageWrapper2 {
+ .case-study-pageWrapper2, .case-study-pageWrapper-dc  {
      color: #333;
      font-size: 24px;
+}
+.case-study-pageWrapper-dc {
+    background: url(images/DC-SWOOSH\ BG.png);
+    background-size: 100%;
+    /* background-position: top; */
+    background-repeat: no-repeat;
 }
  .pageWrapper2 h1 {
      text-align: center;
@@ -819,7 +876,7 @@ nav#subMenu {
      */
      margin: 56px 0 16px 0;
 }
- .stepsBlock {
+ .stepsBlock, .stepsBlock-dc {
      position: relative;
      width: 33.33%;
     /* display: flex;
@@ -833,11 +890,19 @@ nav#subMenu {
     */
      color: #333;
 }
- .case-study-upperBlock {
+
+.stepsBlock-dc{
+    width: 100%;
+}
+ .case-study-upperBlock, .case-study-upperBlock-dc {
      display: grid;
-     margin-left: 2.75em;
+     padding-left: 2.75em;
      padding-bottom: 2em;
 }
+
+/*.case-study-upperBlock-dc{
+    background: red;
+}*/
  .stepsBlock{
      grid-column: span 2;
 }
@@ -877,10 +942,14 @@ nav#subMenu {
 }
  img.blockImage{
      max-width: 1100px;
-     width: 75%;
+     width: 60%;
      display:block;
-     margin: auto;
+     margin: 3em auto;
 }
+
+
+
+
  #cef7e7 .H-chart {
      display: block;
      margin-left: 2.65em;
@@ -888,6 +957,8 @@ nav#subMenu {
  .H-chart img{
      max-width:900px;
      width: 100%;
+     display: block;
+     margin: auto;
 }
  .case-study-pageWrapper3 h1 {
      margin: 0;
@@ -901,13 +972,17 @@ nav#subMenu {
  img.interviewPic {
      width: 75%;
 }
- img.interviewProfile {
+ img.interviewProfile, img.interviewProfile-dc {
      width: 70%;
      display: block;
      margin-top: 24px;
 }
+
+img.interviewProfile-dc{
+    width:100%;
+}
  .case-study-pageWrapper2bb, .case-study-pageWrapper2cc {
-     background: url(images/AFFINITYMAP-BG.png);
+     background: url(images/DC-SWOOSH-DARKBLUE.png);
      color: #fff;
      transition: ease all .5s;
      background-size: cover;
@@ -915,7 +990,7 @@ nav#subMenu {
      background-position: 50%,50%;
 }
  .case-study-pageWrapper2cc {
-     background: url(images/WIREFRAME-BG.png);
+     background: url(images/DC-PURPLE-BLOCK-BG.png);
      background-size: cover;
      background-position: 50% 50%;
 }
@@ -956,7 +1031,7 @@ nav#subMenu {
      color: #fff;
      font-size: 24px;
 }
- .stepsBlock-long, .stepsBlock-long2 {
+ .stepsBlock-long, .stepsBlock-long2, .stepsBlock-long-dc {
      justify-content: space-around;
      flex-direction: column;
      align-content: center;
@@ -964,7 +1039,11 @@ nav#subMenu {
      flex-wrap: wrap;
      color:#fff;
 }
- .stepsBlock-long h2, .stepsBlock-long2 h2 {
+
+.stepsBlock-long-dc{
+    color:#333;
+}
+ .stepsBlock-long h2, .stepsBlock-long2 h2, .stepsBlock-long-dc h2 {
      font-weight: 200;
      font-size: 48px;
      margin: 0;
@@ -973,14 +1052,14 @@ nav#subMenu {
      position: relative;
      display: inline-block;
 }
- .stepsBlock-long h3, .stepsBlock-long2 h3 {
+ .stepsBlock-long h3, .stepsBlock-long2 h3, .stepsBlock-long-dc h3 {
      font-size: 32px;
      font-weight: 200;
      margin: 16px 0 16px 0;
      padding: 0;
      position: relative;
 }
- .stepsBlock-long h2::after {
+ .stepsBlock-long h2::after, .stepsBlock-long-dc h2::after {
      content: "";
      width: 100%;
      position: absolute;
@@ -989,6 +1068,10 @@ nav#subMenu {
      border-radius: 10px;
      background: #fff;
      left: 0;
+}
+
+.stepsBlock-long-dc h2::after{
+    background: #333;
 }
  .stepsBlock-long2 h2::after {
      content: "";
@@ -1014,7 +1097,14 @@ nav#subMenu {
     display:none;
      padding: 2em;
 }
-
+.centerPiece{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.centerInner{
+    display:block;
+}
 .stick-top{
     position: sticky;
 }
@@ -1029,6 +1119,13 @@ nav#subMenu {
     flex-direction: row;
     list-style: none;
     justify-content: center;
+}
+
+.figmaEmbed{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3em;
 }
 /*============ MEDIA QUERIES=================*/
  @media (max-width: 1273px) {
