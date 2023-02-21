@@ -30,6 +30,11 @@ div#sub-navbarNav {
      font-weight: 300;
      margin-top: 1em;
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-top: 1em;
+}
+
  .navListItems a{
      color:#fff;
 }
@@ -54,7 +59,16 @@ div#sub-navbarNav {
      margin: 0;
     /* display: inline-block;
      */
+ }
+
+
+ a.embed_documentation_footer--documentationFooter--pnTqy {
+    display: none!important;
 }
+
+
+
+
  section.artWork {
      display: flex;
      justify-content: space-between;
@@ -990,10 +1004,22 @@ img.interviewProfile-dc{
      background-repeat: no-repeat;
      background-position: 50%,50%;
 }
- .case-study-pageWrapper2cc {
+ .case-study-pageWrapper2cc, .case-study-pageWrapper2cc-doe  {
      background: url(images/DC-PURPLE-BLOCK-BG.png);
      background-size: cover;
      background-position: 50% 50%;
+}
+
+.case-study-pageWrapper2cc-doe  {
+    background: url(images/AFFINITYMAP-BG.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.case-study-pageWrapper3cc-doe  {
+    background: url(images/WIREFRAME-BG.png);
+    background-size: cover;
+    background-position: 50% 50%;
 }
  .case-study-pageWrapper2bb, .case-study-pageWrapper2cc, .case-study-pageWrapper2zz {
      padding-bottom: 4em;
@@ -1127,6 +1153,7 @@ img.interviewProfile-dc{
     justify-content: center;
     align-content: center;
     margin-top: 3em;
+    flex-direction: column;
 }
 /*============ MEDIA QUERIES=================*/
  @media (max-width: 1273px) {
