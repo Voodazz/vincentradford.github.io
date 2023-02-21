@@ -630,7 +630,7 @@ nav#subMenu {
      align-items: center;
      font-weight: normal;
      font-size: 40px;
-     position: relative;
+     position: relative; 
 }
  header.case-study-mainHeader, header.case-study-mainHeader-dc {
      background: url(images/DOE-HERO-IMAGE.png) 50% bottom no-repeat;
