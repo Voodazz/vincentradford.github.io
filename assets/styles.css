@@ -775,6 +775,7 @@ img.dc-problem {
 .container.case-study-dc {
     
     margin: 3em auto;
+    max-width: 980px;
 }
  .case-study-intro ul, .case-study-dc ul {
      list-style-type: none;
