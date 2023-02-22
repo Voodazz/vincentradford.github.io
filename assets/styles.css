@@ -1168,7 +1168,7 @@ img.interviewProfile-dc{
     justify-content: center;
     align-content: center;
     margin-top: 3em;
-    
+    align-items: center;
 }
 /*============ MEDIA QUERIES=================*/
  @media (max-width: 1273px) {
