@@ -910,12 +910,12 @@ img.dc-problem {
 }
 
 .case-study-pageWrapper-CHA {
-    background: url(images/CHA-RESEARCH-BLOB-BG.png);
+    background: url(images/CHA-RESEARCH-BLOB-BG1.png);
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
  .pageWrapper2 h1 {
      text-align: center;
