@@ -9,7 +9,7 @@ div#sub-navbarNav {
     background: #000000;
 }
  p {
-     margin-top: 20px;
+     margin-top: 8px;
 }
  body.case-study{
     background:#f4f9f9;
@@ -646,7 +646,8 @@ nav#subMenu {
      font-size: 40px;
      position: relative; 
 }
- header.case-study-mainHeader, header.case-study-mainHeader-dc {
+ header.case-study-mainHeader, header.case-study-mainHeader-dc,
+ header.case-study-mainHeader-CHA {
      background: url(images/DOE-HERO-IMAGE.png) 50% bottom no-repeat;
      background-size: cover;
      height: 100vh;
@@ -656,7 +657,10 @@ header.case-study-mainHeader-dc{
     background: url(images/DC-HERO-IMAGE.png) 50% bottom no-repeat;
     background-size:cover;
 } 
-
+header.case-study-mainHeader-CHA{
+    background: url(images/CHA-HERO-IMAGE.png) 50% bottom no-repeat;
+    background-size:cover;
+} 
  h1.case-study-headerBody{
      color: #fff;
      text-align: left;
@@ -772,9 +776,15 @@ img.dc-problem {
      color:#666666;
 }
 
-.container.case-study-dc {
+.container.case-study-dc, .container.case-study-CH {
     
     margin: 3em auto;
+    max-width: 980px;
+}
+
+.container.case-study-CH {
+    
+    margin: 0 auto;
     max-width: 980px;
 }
  .case-study-intro ul, .case-study-dc ul {
@@ -892,11 +902,20 @@ img.dc-problem {
      color: #333;
      font-size: 24px;
 }
-.case-study-pageWrapper-dc {
+.case-study-pageWrapper-dc, .case-study-pageWrapper-CHA {
     background: url(images/DC-SWOOSH\ BG.png);
     background-size: 100%;
     /* background-position: top; */
     background-repeat: no-repeat;
+}
+
+.case-study-pageWrapper-CHA {
+    background: url(images/CHA-RESEARCH-BLOB-BG.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
  .pageWrapper2 h1 {
      text-align: center;
@@ -1001,6 +1020,10 @@ img.dc-problem {
 }
  img.interviewPic {
      width: 75%;
+}
+
+img.interviewPic-CH {
+    width: 100%;
 }
  img.interviewProfile, img.interviewProfile-dc {
      width: 70%;
