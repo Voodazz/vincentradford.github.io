@@ -773,7 +773,7 @@ img.dc-problem {
 
     display: block;
     margin: auto;
-    width: 100%;
+    width: 70%;
 }
  .problem{
      grid-column: span 2;
@@ -858,6 +858,7 @@ img.dc-problem {
      position: relative;
      display:inline-block;
 }
+
  .stepsBlock h3, .stepsBlock-dc h3, .stepsBlock-CHA h3 {
      font-size: 32px;
      font-weight: 200;
@@ -975,6 +976,8 @@ margin-top: 8px;
 
 .stepsBlock-CHA {
     width: 75%;
+    margin-left: 2.72em;
+    
 }
 
 .stepsBlock-dc{
@@ -1245,6 +1248,13 @@ img.interviewProfile-dc{
     background-size: cover;
 
 }
+.jumbotron-research{
+    background: url(images/CHA-RESEARCH-BLOB-BG1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3.75rem;
+}
+
  
 .jumbotron-affinity img.interviewPic-CH{
 width: 100%;
