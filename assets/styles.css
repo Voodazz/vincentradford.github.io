@@ -1327,6 +1327,18 @@ padding: .75em 0 1em 0;
         padding: 0;
      
     }
+
+    #subMenu .sub-navbar-nav {
+       
+        height: auto;
+        flex-direction: column;
+        
+  
+    }
+    li.nav-item {
+        margin-bottom: 1em;
+    }
+ 
 }
 
  @media (max-width: 920px) {
