@@ -233,7 +233,7 @@ nav#subMenu {
      text-align: left;
 }
  .pageWrapper {
-     max-width: 1280px;
+     /*max-width: 1280px;*/
      width: 100%;
      margin: auto;
      margin-top: 5em;
