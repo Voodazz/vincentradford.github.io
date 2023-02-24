@@ -9,7 +9,7 @@ div#sub-navbarNav {
     background: #000000;
 }
  p {
-     margin-top: 8px;
+     margin-top: 24px; 
 }
  body.case-study{
     background:#f4f9f9;
@@ -826,7 +826,8 @@ img.dc-problem {
      position: relative;
      width: 25%;
 }
- .stepsBlock h2, .stepsBlock-dc h2 {
+ .stepsBlock h2, .stepsBlock-dc h2,
+ .stepsBlock-CHA h2 {
      font-weight: 200;
      font-size: 48px;
      margin: 0;
@@ -835,12 +836,16 @@ img.dc-problem {
      position: relative;
      display:inline-block;
 }
- .stepsBlock h3, .stepsBlock-dc h3 {
+ .stepsBlock h3, .stepsBlock-dc h3, .stepsBlock-CHA h3 {
      font-size: 32px;
      font-weight: 200;
      margin: 16px 0 0 0;
      padding: 0;
      position: relative;
+}
+
+.stepsBlock-CHA h2{
+    margin-bottom: .4em;
 }
 
 .stepsBlock-dc h3 {
@@ -855,7 +860,8 @@ img.dc-problem {
     font-size: 18px;
     font-weight: 500;
 }
- .stepsBlock h2::after, .stepsBlock-dc h2::after {
+ .stepsBlock h2::after, .stepsBlock-dc h2::after, 
+ .stepsBlock-CHA h2::after  {
      content: "";
      width: 100%;
      position: absolute;
@@ -867,6 +873,12 @@ img.dc-problem {
     /* top: 0;
      */
 }
+
+.stepsBlock-CHA p{
+font-size: 24px;
+margin-top: 8px;
+} 
+
  .stepsBlock h4, .stepsBlock-long h4 {
      text-transform: uppercase;
      font-weight: 300;
@@ -925,11 +937,10 @@ img.dc-problem {
      */
      margin: 56px 0 16px 0;
 }
- .stepsBlock, .stepsBlock-dc {
+ .stepsBlock, .stepsBlock-dc, 
+ .stepsBlock-CHA {
      position: relative;
      width: 33.33%;
-    /* display: flex;
-     */
      justify-content: space-around;
      flex-direction: column;
      align-content: center;
@@ -938,6 +949,10 @@ img.dc-problem {
     /*margin-left: 2.75em;
     */
      color: #333;
+}
+
+.stepsBlock-CHA {
+    width: 75%;
 }
 
 .stepsBlock-dc{
@@ -1210,10 +1225,10 @@ img.interviewProfile-dc{
 }
  
 .jumbotron-affinity img.interviewPic-CH{
-width: 65%;
+width: 100%;
 display: block;
 margin: auto;
-padding: 3em 0 1em 0;
+padding: .75em 0 1em 0;
 }
 
 

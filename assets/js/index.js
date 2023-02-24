@@ -22,6 +22,11 @@ $(document).ready(function(){
    
   });
 
+  $("button#insights4").click(function(){
+    $("#keyInfo4").slideToggle("slow"); 
+   
+  });
+
 });   
    
   
