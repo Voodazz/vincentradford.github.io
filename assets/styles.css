@@ -570,9 +570,7 @@ button.homeviewButton, button.homeviewButton a {
     margin-left: -15px;
 }
 
-.homerow{
-    margin-bottom: 2em;
-}
+ 
 /*============= ANIMATION =========================*/
 /*.mainHeader{
      animation: lefttoRight 1.55s forwards;
@@ -1334,14 +1332,24 @@ padding: .75em 0 1em 0;
         }
 
 
-        .col1, .col2, .col3 {
+        .col4 { 
+            background-image: url(images/CH-TN.png);
+            background-repeat:none;
+            background-size:75%;
+            border-radius: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+
+
+        .col1, .col2, .col3, .col4 {
           
             margin: 0 1em 2em 0;
         }
 
 
 
-        .col1.p-0.m-3, .col2.p-0.m-3, .col3.p-0.m-3 {
+        .col1.p-0.m-3, .col2.p-0.m-3, .col3.p-0.m-3, .col4.p-0.m-4 {
             border-radius: 16px;
         }
          
