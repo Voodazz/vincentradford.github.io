@@ -4,6 +4,9 @@ body,html{
  body, p {
     font-family: 'Poppins', sans-serif;
 }
+a:link, a:visited, a:hover, a:active{
+    text-decoration:none;
+}
 
 div#sub-navbarNav {
     background: #000000;
@@ -244,7 +247,7 @@ nav#subMenu {
      margin-bottom: 56px;
 }
  .myWorkPic1 img {
-     width: 90%;
+     width: 75%;
      display: block;
      margin: auto;
 }
@@ -255,7 +258,7 @@ nav#subMenu {
      margin: 0 0 0 0;
 }
  .myWork p, .myWork-dc p {
-     text-align: center;
+     text-align: left;
      font-size: 24px;
      margin: 8px 0 8px 0;
      padding: 0;
@@ -271,7 +274,8 @@ nav#subMenu {
      color: #FF6161;
      margin-right: 1em;
 }
- ul.projectDetails li::before {
+ ul.projectDetails li::before,
+ ul.homepageDetails li::before {
      content: "";
      height: 17px;
      width: 4px;
@@ -282,6 +286,21 @@ nav#subMenu {
      bottom: 6px;
      border-radius: 16px;
 }
+
+ul.homepageDetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0 0.65em;
+}
+
+ul.homepageDetails li {
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    color: #FF6161;
+    margin-right: 1em;
+}
+
  ul.projectDetails {
      display: flex;
      justify-content: center;
@@ -310,16 +329,20 @@ nav#subMenu {
      color: #fff;
      margin-right: 1em;
 }
- button.viewButton, button.viewButton a {
-     display: block;
-     margin: auto;
-     background: none;
-     color: #fff;
-     border-radius: 8px;
-     border: none;
-     font-size: 1.15em;
-     font-weight: 700;
-     transition: all .5s ease;
+button.viewButton, button.viewButton a,
+button.homeviewButton, button.homeviewButton a {
+    display: block;
+    margin: 0;
+    background: none;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.15em;
+    font-weight: 700;
+    transition: all .5s ease;
+}
+
+.homeviewButton{padding:0;
 }
 .navbar-dark .navbar-nav .nav-link:hover, a.nav-link:hover {
     color:#FF6161!important;
@@ -1262,8 +1285,83 @@ display: block;
 margin: auto;
 padding: .75em 0 1em 0;
 }
+  
+
+/*======= THE NEXT PROJECTS CONTAINER=========*/
 
 
+    /* Image Columns */
+        
+    .col1 {
+        background-image: url(images/GREENGLOBE.png);
+        background-repeat: none;
+        background-size: cover;
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        background-position: 0 -24px;
+       
+    } 
+        .col2 { 
+            background-image: url(images/DC-TN.png);
+            background-repeat:none;
+            background-size:cover;
+            border-radius: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        .col3 {
+            background-image: url(images/SB-TN.png);
+            background-repeat:none;
+            background-size:85%;
+            border-radius: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+
+
+        .col1, .col2, .col3 {
+          
+            margin: 0 1em 2em 0;
+        }
+
+
+
+        .col1.p-0.m-3, .col2.p-0.m-3, .col3.p-0.m-3 {
+            border-radius: 16px;
+        }
+         
+        /* Image To Text On Hover */
+        
+        .hoverText {
+            background: #00000080;
+            opacity: 0;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            justify-content: center;
+            border-radius:16px;
+        }
+
+        
+
+
+       .hoverText h3 {
+            color: #fff;
+            font-family: poppins;
+            font-weight: 200;
+        }
+        
+         .hoverText:hover {
+            opacity:1;
+        }
+
+        .container.container-projects {
+            max-width: 100%;
+        }
 
 /*============ MEDIA QUERIES=================*/
  @media (max-width: 1273px) {
@@ -1278,6 +1376,13 @@ padding: .75em 0 1em 0;
          transform: translateY(14%);
     }
 }
+
+@media (min-width: 1200px){
+.container .container-projects{
+    max-width: 100%;
+}
+}
+
  @media (max-width: 1066px) {
      section.innerHeader {
          width: 70%;
@@ -1393,6 +1498,19 @@ padding: .75em 0 1em 0;
          padding: 8px 0 6em 8px;
     }
 }
+
+
+@media (max-width: 767px){
+    .col1, .col2, .col4 {
+    
+        background-size: 100%;
+    }
+    .col3{
+        background-size:85%;
+    }
+
+}
+
  @media (max-width: 599px){
      .tooBlock1 {
          width: 90%;
