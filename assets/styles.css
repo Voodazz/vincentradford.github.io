@@ -558,6 +558,21 @@ button.homeviewButton, button.homeviewButton a {
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+
+
+  .row, .homerow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.homerow{
+    margin-bottom: 2em;
+}
 /*============= ANIMATION =========================*/
 /*.mainHeader{
      animation: lefttoRight 1.55s forwards;
