@@ -933,7 +933,7 @@ img.dc-problem {
      */
 }
 
-.stepsBlock-CHA p{
+.stepsBlock-CHA p, .inner-container p{
 font-size: 24px;
 margin-top: 8px;
 } 
@@ -1270,7 +1270,8 @@ img.interviewProfile-dc{
     align-items: center; 
 }
 
-.jumbotron, .jumbotron-affinity, .jumbotron-compete  {
+.jumbotron, .jumbotron-affinity, .jumbotron-compete,
+.jumbotron-priority, .jumbotron-persona  {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #f4f9f9;
@@ -1290,8 +1291,24 @@ img.interviewProfile-dc{
     background-color:#dbf5fd;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 0;
 }
 
+.jumbotron-priority{
+    padding: 3.75rem;
+    background-color:#dbf5fd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.jumbotron-persona{
+    padding: 3.75rem;
+    background-color:#caf6e0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
 
 .jumbotron-research{
     background: url(images/CHA-RESEARCH-BLOB-BG1.png);
@@ -1302,13 +1319,27 @@ img.interviewProfile-dc{
 
  
 .jumbotron-affinity img.interviewPic-CH,
-.jumbotron-compete img.interviewPic-CH{
+.jumbotron-compete img.interviewPic-CH,
+.jumbotron-persona img.interviewPic-CH,
+.jumbotron-priority img.interviewPic-CH{
 width: 100%;
 display: block;
 margin: auto;
 padding: .75em 0 1em 0;
 } 
   
+.XXcontainer {
+    display: flex;
+    max-width: 86%;
+    justify-content: center;
+    align-items: start;
+    margin: auto; 
+}
+
+.inner-container {
+  
+    padding: 1em;
+}
 
 /*======= THE NEXT PROJECTS CONTAINER=========*/
 
@@ -1457,13 +1488,24 @@ padding: .75em 0 1em 0;
      li.nav-item {
          margin-bottom: 8px;
     }
-}
+
+  
+}   
 
 @media (max-width:991px){
     ul.socialNavLinks {
      
         padding: 0;
      
+    }
+
+    .XXcontainer {
+       
+        max-width: 100%;
+       
+        align-items: start;
+       
+        flex-direction: column;
     }
 
     #subMenu .sub-navbar-nav {
