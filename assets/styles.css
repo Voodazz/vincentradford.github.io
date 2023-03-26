@@ -64,6 +64,20 @@ div#sub-navbarNav {
      */
  }
 
+ul.contactEmail{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+ul.contactEmail a {
+    font-size: 1.65em;
+    color:#333;
+    transition: all 0.25s ease-in-out;
+}
+
 
  a.embed_documentation_footer--documentationFooter--pnTqy {
     display: none!important;
@@ -344,9 +358,19 @@ button.homeviewButton, button.homeviewButton a {
 
 .homeviewButton{padding:0;
 }
-.navbar-dark .navbar-nav .nav-link:hover, a.nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover, a.nav-link:hover, ul.contactEmail a:hover {
     color:#FF6161!important;
     transition: all .5s ease;
+}
+
+
+ul.contactEmail a:hover {
+    background: #ae2f2f;
+    color: #fff!important;
+    transform: scaleX(1.05);
+    padding: .25em 1em;
+    border-radius: 16px;
+    transition: all 0.25s ease-in-out;
 }
  button.viewButton a {
      background: #FF6161;
@@ -418,14 +442,14 @@ button.homeviewButton, button.homeviewButton a {
      transition: ease all .5s;
 }
  .pageWrapper2 {
-    background: linear-gradient(180deg, #441757 0%, #9B0F5D 100%);
+    background: linear-gradient(180deg, #441757 0%, #591558 71.87%, #9B0F5D 100%);
      color: #fff;
      transition: ease all .5s; 
 }
  .pageWrapper2, .pageWrapper3 {
      padding-bottom: 4em;
      padding-top: 5.75em;
-}
+} 
  .pageWrapper2 {
      padding-top: 1.25em;
 }
@@ -491,7 +515,8 @@ button.homeviewButton, button.homeviewButton a {
      padding: 0;
 }
  .contactBlock1 img {
-     width: 200px;
+     max-width: 500px;
+     width: 100%;
      display: block;
      margin: 2em auto;
      box-shadow: rgba(250, 250, 250, .75);
@@ -516,7 +541,7 @@ button.homeviewButton, button.homeviewButton a {
      background: url(images/contactBG2.png) 50% bottom no-repeat;
      padding-bottom: 4em;
      padding: 5.75em 1em 4.75em 1em;
-     background: #f5f0e7;
+     background: linear-gradient(180deg, #F0D0A8 0%, #FFF8EB 100%);
      box-sizing: border-box;
 }
  .case-study-pageWrapper3 h1 {
@@ -1618,6 +1643,10 @@ padding: .75em 0 1em 0;
      .moreInfo{
          width: 83%;
     }
+
+    
+
+
 }
  @media (max-width: 500px){
      ul.projectDetails2 li::before {
@@ -1646,6 +1675,12 @@ padding: .75em 0 1em 0;
      .aboutMeTxt {
          width: 100%;
          padding: 0;
+    }
+
+    ul.contactEmail{
+      
+        flex-direction: column;
+        margin-bottom: 24px;
     }
 }
  
