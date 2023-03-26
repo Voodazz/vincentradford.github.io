@@ -418,9 +418,9 @@ button.homeviewButton, button.homeviewButton a {
      transition: ease all .5s;
 }
  .pageWrapper2 {
-     background: #CE6352;
+    background: linear-gradient(180deg, #441757 0%, #9B0F5D 100%);
      color: #fff;
-     transition: ease all .5s;
+     transition: ease all .5s; 
 }
  .pageWrapper2, .pageWrapper3 {
      padding-bottom: 4em;
@@ -438,9 +438,15 @@ button.homeviewButton, button.homeviewButton a {
      margin: 56px 0 16px 0;
 }
  .pageWrapper3 {
-     background: #EEB4A2;
+    background: linear-gradient(180deg, #EDB4A4 0%, #AE4C31 84.9%);
      color: #fff#333;
 }
+
+
+
+
+
+
  .moreInfo {
      padding: 0 0 0 4em;
      box-sizing: border-box;
