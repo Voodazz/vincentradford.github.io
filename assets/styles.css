@@ -1352,12 +1352,17 @@ img.interviewProfile-dc{
 .jumbotron-affinity img.interviewPic-CH,
 .jumbotron-compete img.interviewPic-CH,
 .jumbotron-persona img.interviewPic-CH,
-.jumbotron-priority img.interviewPic-CH{
+.jumbotron-priority img.interviewPic-CH,
+.jumbotron-priority img.wireframePic-CH{
 width: 100%;
 display: block;
 margin: auto;
 padding: .75em 0 1em 0;
 } 
+
+.jumbotron-priority img.wireframePic-CH{
+    margin: 0 
+}
   
 .XXcontainer {
     display: flex;
