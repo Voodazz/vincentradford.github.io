@@ -927,14 +927,14 @@ img.dc-problem {
  .stepsBlock {
      position: relative;
      width: 25%;
-}
+} 
  .stepsBlock h2, .stepsBlock-dc h2,
  .stepsBlock-CHA h2 {
      font-weight: 200;
      font-size: 48px;
      margin: 0;
      padding: 0;
-     line-height: 48px;
+     line-height: 48px; 
      position: relative;
      display:inline-block;
 }
