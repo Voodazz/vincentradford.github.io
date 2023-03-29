@@ -467,13 +467,24 @@ ul.contactEmail a:hover {
 }
 
 
+ul.aboutDetails li {
+    font-weight: 500;
+    font-size: 21px;
+    position: relative;
+    color: #fff;
+    margin-right: 1em;
+} 
 
+ul.aboutDetails{
+   margin: 0 0 4rem 0;
+} 
 
 
 
  .moreInfo {
      padding: 0 0 0 4em;
      box-sizing: border-box;
+    
 }
  .moreInfo h3 {
      font-size: 32px;
