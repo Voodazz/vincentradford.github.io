@@ -249,12 +249,18 @@ nav#subMenu {
      margin: 16px 0 0 0;
      text-align: left;
 }
- .pageWrapper {
+ .pageWrapper, .pageWrapper-SB {
      /*max-width: 1280px;*/
      width: 100%;
      margin: auto;
      margin-top: 5em;
 }
+
+.pageWrapper-SB {
+    /*max-width: 1280px;*/
+   background: #333;
+   color:#fff;
+} 
  .myWorkPic1 {
      width: 50%;
      margin: auto;
@@ -265,20 +271,26 @@ nav#subMenu {
      display: block;
      margin: auto;
 }
- .myWork h3, .myWork-dc h3 {
+ .myWork h3, .myWork-dc h3{
      text-align: center;
      font-size: 32px;
      font-weight: 500;
      margin: 0 0 0 0;
 }
- .myWork p, .myWork-dc p {
+
+.myWork-SB h3{
+color: #fe8637;
+}
+
+
+ .myWork p, .myWork-dc p, .myWork-SB p {
      text-align: left;
      font-size: 24px;
      margin: 8px 0 8px 0;
      padding: 0;
      line-height: 36px;
 }
-.myWork-dc h3, .myWork-dc p{
+.myWork-dc h3, .myWork-dc p, .myWork-SB p{
     text-align: left;
 }
  ul.projectDetails li {
@@ -636,7 +648,7 @@ ul.aboutDetails{
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    align-items: center;
+    align-items: top;
 }
 
 .row.tool-row {
@@ -795,7 +807,8 @@ max-width: 20%;
      position: relative; 
 }
  header.case-study-mainHeader, header.case-study-mainHeader-dc,
- header.case-study-mainHeader-CHA {
+ header.case-study-mainHeader-CHA,
+ header.case-study-mainHeader-SB  {
      background: url(images/DOE-HERO-IMAGE.png) 50% bottom no-repeat;
      background-size: cover;
      height: 100vh;
@@ -807,6 +820,11 @@ header.case-study-mainHeader-dc{
 } 
 header.case-study-mainHeader-CHA{
     background: url(images/CHA-HERO-IMAGE.png) 50% bottom no-repeat;
+    background-size:cover;
+} 
+
+header.case-study-mainHeader-SB{
+    background: url(images/SB-HEROPIC.png) 50% bottom no-repeat;
     background-size:cover;
 } 
  h1.case-study-headerBody{
@@ -856,15 +874,19 @@ header.case-study-mainHeader-CHA{
      padding: 0 0 0 16px;
      margin: 0;
 }
- .case-study-myWorkPic1 {
+ .case-study-myWorkPic1, .case-study-myWorkPic2 {
      width: 75%;
      margin: auto;
      margin-bottom: 56px;
 }
- .case-study-myWorkPic1 img {
+ .case-study-myWorkPic1 img, .case-study-myWorkPic2 img {
      width: 90%;
      display: block;
      margin: auto;
+}
+
+.case-study-myWorkPic2 img{
+    width:auto;
 }
  h2.case-study-header2 {
      text-align: center;
@@ -883,6 +905,11 @@ header.case-study-mainHeader-CHA{
 
 img.CS-logo-dc {
     max-width: 500px;
+    display: block;
+    margin: 2em auto;
+}
+img.SB-logo-dc {
+    max-width: 200px;
     display: block;
     margin: 2em auto;
 }
@@ -924,7 +951,7 @@ img.dc-problem {
      color:#666666;
 }
 
-.container.case-study-dc, .container.case-study-CH {
+.container.case-study-dc, .container.case-study-CH, .container.case-study-SB {
     
     margin: 3em auto;
     max-width: 980px;
@@ -935,24 +962,29 @@ img.dc-problem {
     margin: 0 auto;
     max-width: 980px;
 }
- .case-study-intro ul, .case-study-dc ul {
+ .case-study-intro ul, .case-study-dc ul, .case-study-SB ul {
      list-style-type: none;
      padding: 0;
      margin: 0;
 }
- .case-study-intro li, .case-study-dc li {
+ .case-study-intro li, .case-study-dc li, .case-study-SB li  {
      list-style-type: none;
      padding: 0 0 8px 0;
      font-size: 24px;
      color:#333;
 }
 
-.case-study-dc li {
+.case-study-dc li, .case-study-SB li {
     list-style-type:disc;
     padding: 0 0 8px 0;
     margin-left: 3em;
     font-size: 16px;
     color: #333;
+}
+
+.case-study-SB li {
+    color: #f1f1f1;
+    margin-left: 2em;
 }
 
  .role {
