@@ -1021,12 +1021,13 @@ img.dc-problem {
     color:#f1f1f1; 
 }
  
- .stepsBlock h3, .stepsBlock-dc h3, .stepsBlock-CHA h3 {
-     font-size: 32px;
+ .stepsBlock h3, h4, h3 .stepsBlock-dc h3, h4, h3 .stepsBlock-CHA h3, h4, h3 {
+     font-size: 32px; 
      font-weight: 200;
      margin: 16px 0 0 0;
      padding: 0;
      position: relative;
+     color:#333; 
 }
 
 .stepsBlock-CHA h3{
