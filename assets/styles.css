@@ -12,7 +12,7 @@ div#sub-navbarNav {
     background: #000000;
 }
  p {
-     margin-top: 24px;  
+     margin-top: 8px;  
 }
  body.case-study{
     background:#f4f9f9;
@@ -1021,8 +1021,8 @@ img.dc-problem {
     color:#f1f1f1; 
 }
  
- .stepsBlock h3, h4, h3 .stepsBlock-dc h3, h4, h3 .stepsBlock-CHA h3, h4, h3 {
-     font-size: 32px; 
+ .stepsBlock h3, .stepsBlock-dc h3, .stepsBlock-CHA h3, h4, h3 {
+     font-size: 32px;
      font-weight: 200;
      margin: 16px 0 0 0;
      padding: 0;
@@ -1032,6 +1032,7 @@ img.dc-problem {
 
 .stepsBlock-CHA h3{
     margin: 0 0 0 0;
+    font-weight: 500; 
 }
 
 .stepsBlock-CHA h2{
