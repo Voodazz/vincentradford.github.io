@@ -1007,7 +1007,7 @@ img.dc-problem {
      width: 25%;
 } 
  .stepsBlock h2, .stepsBlock-dc h2,
- .stepsBlock-CHA h2 {
+ .stepsBlock-CHA h2, .stepsBlock-SB h2 {
      font-weight: 200;
      font-size: 48px;
      margin: 0;
@@ -1015,6 +1015,10 @@ img.dc-problem {
      line-height: 48px; 
      position: relative;
      display:inline-block;
+}
+
+.stepsBlock-SB h2, h3, h4{
+    color:#f1f1f1; 
 }
  
  .stepsBlock h3, .stepsBlock-dc h3, .stepsBlock-CHA h3 {
@@ -1434,13 +1438,40 @@ img.interviewProfile-dc{
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
+   
 }
 
-.jumbotron-research{
+.jumbotron-research, .jumbotron-research-SB{
     background: url(images/CHA-RESEARCH-BLOB-BG1.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3.75rem;
+}
+
+.jumbotron-research-SB{
+    background: linear-gradient(180deg, #282727 17.71%, #412646 76.12%, #86279A 100%);
+    background-image: transparent;
+    color: #f1f1f1;
+  
+
+}
+
+
+.stepsBlock h2::after, .stepsBlock-dc h2::after, .stepsBlock-CHA h2::after, .stepsBlock-SB h2::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    height: 6px;
+    border-radius: 10px;
+    background: #333;
+    left: 0;
+    /* top: 0; */
+}
+
+
+.stepsBlock-SB h2::after {
+    background: #f1f1f1;
 }
 
  
