@@ -1449,6 +1449,18 @@ img.interviewProfile-dc{
     margin-bottom: 0;
 }
 
+.jumbotron-compete-SB {
+    padding: 3.75rem;
+    background: linear-gradient(180deg, #333333 85.13%, #4D5531 94.18%, #6C7E2D 100%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.jumbotron-compete-SB p {
+    color: #f1f1f1;
+}
 .jumbotron-priority{
     padding: 3.75rem;
     background-color:#dbf5fd;
@@ -1457,13 +1469,17 @@ img.interviewProfile-dc{
     margin-bottom: 0;
 }
 
-.jumbotron-persona{
+.jumbotron-persona .jumbotron-persona-SB{
     padding: 3.75rem;
     background: linear-gradient(180deg, #76CCBD 0%, #8FD6B4 100%);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
    
+}
+
+.jumbotron-persona-SB{
+    background:#333;
 }
 
 .jumbotron-research, .jumbotron-research-SB{
