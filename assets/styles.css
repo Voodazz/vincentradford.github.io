@@ -1,6 +1,6 @@
 body,html{
     margin:0;
-    overflow-x: hidden;
+   /* overflow-x: hidden;*/
 }
  body, p {
     font-family: 'Poppins', sans-serif;
@@ -17,7 +17,7 @@ div#sub-navbarNav {
 }
  body.case-study{
     background:#f4f9f9;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
  html {
      scroll-behavior: smooth;
@@ -228,7 +228,7 @@ nav#subMenu {
     margin: 0;
     /* position: absolute; */
     /* top: 50%; */
-    -ms-transform: translateY(-50%);
+    /*-ms-transform: translateY(-50%);*/
     /* transform: translateY(90%); */
 }
  header.mainHeader {
@@ -483,7 +483,7 @@ ul.contactEmail a:hover {
 }
  .pageWrapper3 {
     background: linear-gradient(180deg, #EDB4A4 0%, #AE4C31 84.9%);
-     color: #fff#333;
+     color: #333;
 }
 
 
@@ -600,7 +600,7 @@ ul.aboutDetails{
 }
 
 .grid-itme img {
-    width: 33.33%;
+    width: 33.33%; 
     display: block;
     margin: auto;
 }
@@ -656,7 +656,7 @@ ul.aboutDetails{
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    align-items: top;
+    align-items:flex-start;
 }
 
 .row.tool-row {
@@ -715,7 +715,9 @@ max-width: 20%;
      animation: toptoBottom 2s forwards;
 }
 
-.jumbotron.jumbotron-Index{}
+.jumbotron.jumbotron-Index{
+    animation: topBottom2 1s forwards;
+    animation-timing-function: ease-in-out;}
  @keyframes toptoBottom{
      from {
          opacity: 0;
@@ -726,6 +728,45 @@ max-width: 20%;
          transform: translatey(6em);
     }
 }
+
+.section.case-study-innerHeader{
+    animation: topBottom2 1s forwards;
+    animation-timing-function: ease-in-out;}
+ @keyframes toptoBottom{
+     from {
+         opacity: 0;
+         transform: translateY(1em);
+    }
+     to {
+         opacity: 1;
+         transform: translatey(6em);
+    }
+}
+
+
+.case-study-innerHeader{
+    animation: topBottom2 1s forwards;
+    animation-timing-function: ease-in-out;}
+ @keyframes toptoBottom{
+     from {
+         opacity: 0;
+         transform: translateY(1em);
+    }
+     to {
+         opacity: 1;
+         transform: translatey(7em);
+    }
+}
+
+
+
+
+
+
+
+
+
+
  .rightBlock h2{
      animation: fadeIn 2s forwards;
 }
@@ -823,6 +864,15 @@ max-width: 20%;
      background-size: cover;
      height: 100vh;
 }
+
+header.case-study-mainHeader-CHA{
+    background: url(images/CHA-HERO-IMAGE.png) 50% bottom no-repeat;
+}
+
+header.case-study-mainHeader-SB{
+    background: url(images/SB-HEROPIC.png) 50% bottom no-repeat;
+}
+
  
 header.case-study-mainHeader-dc{
     background: url(images/DC-HERO-IMAGE.png) 50% bottom no-repeat;
@@ -1541,7 +1591,7 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
 .jumbotron-research-SB{
     background:#235577;
    /* background: linear-gradient(180deg, #282727 17.71%, #412646 76.12%, #86279A 100%);*/
-    background-image: transparent;
+    background-image: none;
     color: #f1f1f1;
   
 
@@ -1617,7 +1667,7 @@ padding: .75em 0 1em 0;
         
     .col1 {
         background-image: url(images/GREENGLOBE.png);
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-size: cover;
         border-radius: 16px;
         background-repeat: no-repeat;
@@ -1626,7 +1676,7 @@ padding: .75em 0 1em 0;
     } 
         .col2 { 
             background-image: url(images/DC-TN.png);
-            background-repeat:none;
+            background-repeat:no-repeat;
             background-size:cover;
             border-radius: 16px;
         background-repeat: no-repeat;
@@ -1634,7 +1684,7 @@ padding: .75em 0 1em 0;
         }
         .col3 {
             background-image: url(images/SB-TN.png);
-            background-repeat:none;
+            background-repeat:no-repeat;
             background-size:85%;
             border-radius: 16px;
         background-repeat: no-repeat;
@@ -1644,7 +1694,7 @@ padding: .75em 0 1em 0;
 
         .col4 { 
             background-image: url(images/CH-TN.png);
-            background-repeat:none;
+            background-repeat:no-repeat;
             background-size:75%;
             border-radius: 16px;
         background-repeat: no-repeat;
@@ -1938,13 +1988,14 @@ padding: .75em 0 1em 0;
 /*============TEST CSS ====================*/
 
 .jumbotron.jumbotron-CH1{
-    background: url(images/CHA-HERO-IMAGE.png) 50% bottom no-repeat;
+    background: none;
     background-size: cover;
     height: 100vh;
+    transition: all 2s ease-in;
 }
 
 .jumbotron.jumbotron-SB1{
-    background: url(images/SB-HEROPIC.png) 50% bottom no-repeat;
+    background: none;
     background-size: cover;
 
 }
