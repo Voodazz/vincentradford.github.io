@@ -1,5 +1,6 @@
 body,html{
     margin:0;
+    overflow-x: hidden;
 }
  body, p {
     font-family: 'Poppins', sans-serif;
@@ -223,12 +224,12 @@ nav#subMenu {
      font-size: 40px;
      position: relative;
 }
- .heroBlurb {
-     margin: 0;
-     position: absolute;
-     top: 50%;
-     -ms-transform: translateY(-50%);
-     transform: translateY(90%);
+.heroBlurb {
+    margin: 0;
+    /* position: absolute; */
+    /* top: 50%; */
+    -ms-transform: translateY(-50%);
+    /* transform: translateY(90%); */
 }
  header.mainHeader {
      background: url(images/HeroImage.png) 50% bottom no-repeat;
@@ -245,12 +246,17 @@ nav#subMenu {
      padding-bottom: 8em;
      background-size: cover;
 }
- .innerHeader p {
+.innerHeader p, .jumbotron.jumbotron-Index {
      font-size: 24px; 
      padding: 0 0 0 0;
      margin: 16px 0 0 0;
      text-align: left;
 }
+
+
+
+
+
  .pageWrapper, .pageWrapper-SB {
      /*max-width: 1280px;*/
      width: 100%;
@@ -702,12 +708,14 @@ max-width: 20%;
     }
      to {
          opacity: 1;
-         transform: translateY(0);
+         transform: translateY(-1em);
     }
 }
- .heroBlurb, .case-study-heroBlurb{
+ .heroBlurb, .case-study-heroBlurb .jumbotron.jumbotron-Index{
      animation: toptoBottom 2s forwards;
 }
+
+.jumbotron.jumbotron-Index{}
  @keyframes toptoBottom{
      from {
          opacity: 0;
@@ -715,7 +723,7 @@ max-width: 20%;
     }
      to {
          opacity: 1;
-         transform: translatey(4em);
+         transform: translatey(6em);
     }
 }
  .rightBlock h2{
@@ -1813,7 +1821,7 @@ padding: .75em 0 1em 0;
     }
      .heroBlurb {
          margin: 0;
-         position: absolute;
+         position: static;
          top: 48%;
          -ms-transform: translateY(-48%);
          transform: translateY(40%);
