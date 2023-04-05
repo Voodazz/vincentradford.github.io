@@ -16,6 +16,7 @@ div#sub-navbarNav {
 }
  body.case-study{
     background:#f4f9f9;
+    overflow-x: hidden;
 }
  html {
      scroll-behavior: smooth;
@@ -245,7 +246,7 @@ nav#subMenu {
      background-size: cover;
 }
  .innerHeader p {
-     font-size: 24px;
+     font-size: 24px; 
      padding: 0 0 0 0;
      margin: 16px 0 0 0;
      text-align: left;
@@ -254,7 +255,7 @@ nav#subMenu {
      /*max-width: 1280px;*/
      width: 100%;
      margin: auto;
-     margin-top: 5em;
+     margin-top: 0;
 }
 
 .pageWrapper-SB {
@@ -1270,6 +1271,10 @@ margin-top: 8px;
 img.interviewPic-CH {
     width: 90%;
 }
+
+img.interviewPic-SB {
+    width: 60%;
+}
  img.interviewProfile, img.interviewProfile-dc {
      width: 70%;
      display: block;
@@ -1442,9 +1447,10 @@ img.interviewProfile-dc{
 
 .jumbotron, .jumbotron-affinity, .jumbotron-compete,
 .jumbotron-priority, .jumbotron-persona, .jumbotron.jumbotron-personal-CH, .jumbotron.jumbotron-CHembed, .jumbotron.jumbotron-SBtesting {
-    padding: 2rem 1rem;
+    /*padding: 2rem 1rem;*/
+    padding: 2rem 0 2rem 0;
     margin-bottom: 0;
-    background-color: #f4f9f9;
+    background-color: transparent;
     border-radius: 0.3rem;
   
 }
@@ -1452,6 +1458,8 @@ img.interviewProfile-dc{
 .col-md-4.col-md-4-Persona{
     font-size: 24px;
 }
+
+
 .jumbotron.jumbotron-SBtesting{
 background:#235577;
 }
@@ -1510,8 +1518,9 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
    
 }
 
-.jumbotron-persona-SB{
-    background:#333;
+.jumbotron-persona-SB {
+    background: #333;
+    padding: 1rem;
 }
 
 .jumbotron-research, .jumbotron-research-SB{
@@ -1530,6 +1539,9 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
 
 }
 
+.jumbotron{
+    border-radius: 0;
+}
 
 .stepsBlock h2::after, .stepsBlock-dc h2::after, .stepsBlock-CHA h2::after, .stepsBlock-SB h2::after {
     content: "";
@@ -1923,6 +1935,12 @@ padding: .75em 0 1em 0;
     height: 100vh;
 }
 
+.jumbotron.jumbotron-SB1{
+    background: url(images/SB-HEROPIC.png) 50% bottom no-repeat;
+    background-size: cover;
+
+}
+ 
 
 
 @media (max-width: 768px){
@@ -2028,6 +2046,10 @@ body{
   
 }
 
+.stepsBlock h3, .stepsBlock-dc h3{
+    font-size: 24px;
+}
+
 .case-study-pageWrapper2zz {
     color: #fff;
     font-size: 16px;
@@ -2054,6 +2076,14 @@ ul.case-study-projectDetails li {
 .container.container-prob-sol img {
     width: 100%;
  
+}
+
+.col-md-4.col-md-4-Personas-SB{
+    font-size: 16px;
+}
+
+img.interviewPic-SB {
+    width: 100%;
 }
 body.case-study {
   
