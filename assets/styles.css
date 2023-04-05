@@ -1232,9 +1232,14 @@ margin-top: 8px;
     /*margin-left: 2.75em;
     */
      color: #333;
+} 
+
+.stepsBlock-SB p {
+    color: #f1f1f1;
+    font-size: 24px;
 }
 
-.stepsBlock-CHA {
+.stepsBlock-CHA, .stepsBlock-SB {
     width: 75%;
     /*margin-left: 2.72em;*/
     
@@ -1536,6 +1541,13 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
     background: url(images/CHA-AFFINITY-MAP-BG.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+.jumbotron-affinity-SB{
+    padding: 3.75rem;
+    background: #333;
+    
 
 }
 
