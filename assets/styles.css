@@ -204,6 +204,14 @@ nav#subMenu {
      font-size: 40px;
      color: #FF6161;
 }
+
+.moreTools .grid-item img {
+    max-width: 75%;
+    padding: 0.35rem 0;
+}
+
+
+
  span.helloThere{
      color:#FF6161;
      font-weight: 600;
@@ -2105,6 +2113,11 @@ img.interviewPic-CH{
     
     margin-left: 1.45em;
    
+}
+
+.myWorkPic1 {
+
+    margin-bottom: 24px;
 }
 
 
