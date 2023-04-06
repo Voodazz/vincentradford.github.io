@@ -15,10 +15,10 @@ div#sub-navbarNav {
  p {
      margin-top: 8px;  
 }
- body.case-study{
+ /*body.case-study{
     background:#f4f9f9;
-    /*overflow-x: hidden;*/
-}
+    overflow-x: hidden;
+}*/
  html {
      scroll-behavior: smooth;
 }
@@ -659,6 +659,12 @@ ul.aboutDetails{
     align-items:flex-start;
 }
 
+.row.homerow{
+    margin-bottom: 3em;
+}
+
+
+
 .row.tool-row {
     text-align: center;
 }
@@ -1019,6 +1025,15 @@ img.dc-problem {
     max-width: 980px;
 }
 
+.container.case-study-dc {
+    font-size: 24px;
+    margin-top: 2em;
+}
+
+.container.case-study-dc p {
+    font-size: 24px;
+    margin-top: .76em;
+}
 .container.container-prob-sol img {
     width: 100%;
     margin-top: 1em;
@@ -1096,7 +1111,7 @@ img.dc-problem {
      color:#333; 
 }    
 
- .stepsBlock-SB h2{
+ .stepsBlock-SB h2, .stepsBlock-DC h2{
     font-size: 48px;
  
     color: #f1f1f1;
@@ -1105,14 +1120,22 @@ img.dc-problem {
     color: #f1f1f1;
 }
 
+ .stepsBlock-DC h3{
+    color: #333;
+}
+
 .stepsBlock-CHA h2{
     font-size: 48px;
     word-wrap: break-word;
 }
-
+ 
 
 .stepsBlock-SB h2{
     color:#f1f1f1; 
+}
+
+.stepsBlock-DC h2{
+    color: #333;
 }
  
 
@@ -1156,6 +1179,14 @@ img.dc-problem {
     /* top: 0;
      */
 }
+
+.stepsBlock.stepsBlock-DC {
+    width: 75%;
+}
+
+.stepsBlock.stepsBlock-DC2 {
+    width: 100%;
+} 
 
 .stepsBlock-CHA p, .inner-container p{
 font-size: 24px;
@@ -1298,11 +1329,16 @@ margin-top: 8px;
     /* top: 0;
      */
 }
- img.blockImage{
+ img.blockImage, img.blockImage-persona{
      max-width: 1100px;
-     width: 60%;
+     width: 75%;
      display:block;
      margin: 3em auto;
+}
+img.blockImage-persona{
+    width: 100%;
+    margin: 1em auto;
+
 }
 
 
@@ -1551,6 +1587,13 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
 
 }
 
+.jumbotron-affinity-DC{
+    padding: 3.75rem;
+    /*background: #333;*/
+    
+
+}
+
 .jumbotron-compete {
     padding: 3.75rem;
     background-color:#dbf5fd;
@@ -1663,7 +1706,7 @@ padding: .75em 0 1em 0;
     display: flex;
     margin: 0 auto;
     width: 100%;
-    overflow: hidden;
+   
     /* align-items: start; */
 }
  
@@ -1923,9 +1966,7 @@ padding: .75em 0 1em 0;
     .col3{
         background-size:cover;
     }
-    body {
-        overflow-x:hidden;
-    }
+  
 
 }
 
@@ -2059,10 +2100,6 @@ img.interviewPic-CH{
 
     width: 100%;
 }
-.stepsBlock-CHA p, .inner-container p {
-    font-size: 16px;
-    margin-top: 8px;
-}
 
 .case-study-upperBlock-block {
     
@@ -2070,12 +2107,8 @@ img.interviewPic-CH{
    
 }
 
-.stepsBlock-long2 p{
-    font-size: 16px;
-}
-body{
-    overflow-x: hidden;
-}
+
+ 
 
 .stepsBlock-CHA h2 {
     font-size: 32px;
@@ -2121,11 +2154,7 @@ body{
     font-size: 24px;
 }
 
-.case-study-pageWrapper2zz {
-    color: #fff;
-    font-size: 16px;
-    padding: 0 1em 0 1em;
-}
+
 
 .jumbotron-priority {
     padding: 3.75rem 1em 3.75rem 1em;
@@ -2133,11 +2162,7 @@ body{
  
 }
 
-ul.case-study-projectDetails li {
-   
-    font-size: 16px;
 
-}
 
 .stepsBlock-long, .stepsBlock-long2, .stepsBlock-long-dc {
  
@@ -2149,15 +2174,97 @@ ul.case-study-projectDetails li {
  
 }
 
-.col-md-4.col-md-4-Personas-SB{
-    font-size: 16px;
+
+
+.case-study-upperBlock-block h2 {
+    margin: 0 0 .54em 0;
 }
 
+.jumbotron-affinity-DC {
+    padding: 0.75rem;
+    /* background: #333; */
+}
 img.interviewPic-SB {
     width: 100%;
 }
-body.case-study {
-  
-    overflow-x: hidden;
+
 }
+
+@media (max-width: 599px){
+
+    .col-md-4.col-md-4-Personas-SB{
+        font-size: 16px;
+    }
+    .case-study-upperBlock p, .case-study-pageWrapper3 p, .container.case-study-dc p {
+        padding: 0.75rem;
+        /* background: #333; */
+    
+    
+        font-size: 16px;
+    }
+    
+    .stepsBlock-SB h2, .stepsBlock-DC h2 {
+        font-size: 32px;
+       
+    }
+
+    ul.case-study-projectDetails li {
+   
+        font-size: 16px;
+    
+    }
+
+    .case-study-pageWrapper2zz {
+        color: #fff;
+        font-size: 16px;
+        padding: 0 1em 0 1em;
+    }
+
+    .stepsBlock-long2 p, .col-md-4-CH-PERSONA p {
+       
+    
+        font-size: 16px;
+    }
+
+    .stepsBlock-CHA p, .inner-container p {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    img.blockImage, img.blockImage-persona {
+        
+        width: 100%;
+       
+    }
+
+    img.interviewPic {
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .stepsBlock h2, .stepsBlock-dc h2, .stepsBlock-CHA h2, .stepsBlock-SB h2 {
+     
+        line-height: 32px;
+      
+    }
+    .moneyShot img {
+        height: 100%;
+        width: 100%;
+    }
+
+    h2.painPoint{
+        font-size: 1.26em;
+    }
+
+    .heroBlurb {
+       
+        line-height: 30px;
+        text-align: left;
+    }
+    
+
+
+
+
+
 }
