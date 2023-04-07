@@ -753,7 +753,7 @@ max-width: 20%;
     }
      to {
          opacity: 1;
-         transform: translatey(6em);
+         transform: translatey(8em);
     }
 }
 
@@ -768,7 +768,7 @@ max-width: 20%;
     }
      to {
          opacity: 1;
-         transform: translatey(7em);
+         transform: translatey(9em);
     }
 }
 
@@ -2005,7 +2005,7 @@ padding: .75em 0 1em 0;
          text-align: center;
     }
      section.case-study-innerHeader {
-         margin: 0 1em 0 1em;
+         margin: 2em 1em 0 1em;
     }
      section.myWork {
          padding: 0 2em 0 2em;
