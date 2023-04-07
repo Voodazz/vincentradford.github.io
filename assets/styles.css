@@ -2314,6 +2314,11 @@ img.interviewPic-SB {
         background-size: 100%;
  
     }
+
+    .moneyShot img {
+        height: auto;
+        width: 100%;
+    }
     
 
 
