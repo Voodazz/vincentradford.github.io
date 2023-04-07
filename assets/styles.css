@@ -1000,7 +1000,7 @@ img.dc-problem {
 
     display: block;
     margin: auto;
-    width: 65%; 
+    width: 60%; 
 }
  .problem{
      grid-column: span 2;
