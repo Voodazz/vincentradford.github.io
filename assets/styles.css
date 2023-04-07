@@ -1000,7 +1000,7 @@ img.dc-problem {
 
     display: block;
     margin: auto;
-    width: 76%;
+    width: 65%;
 }
  .problem{
      grid-column: span 2;
@@ -1389,7 +1389,7 @@ img.blockImage-persona{
 }
 
 img.interviewPic-CH {
-    width: 90%;
+    width: 65%;
 }
 
 img.interviewPic-SB {
