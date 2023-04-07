@@ -1000,7 +1000,7 @@ img.dc-problem {
 
     display: block;
     margin: auto;
-    width: 50%;
+    width: 76%;
 }
  .problem{
      grid-column: span 2;
@@ -1291,6 +1291,7 @@ margin-top: 8px;
      display: grid;
      /*padding-left: 2.75em;*/
      padding-bottom: 2em;
+     padding-left: 2em;
 }
 
 .col-md-4-CH-PERSONA p{
@@ -1325,7 +1326,12 @@ margin-top: 8px;
      position: relative;
      display: inline-block;
 }
- .case-study-upperBlock-block h2::after {
+
+.case-study-upperBlock-block p {
+    margin-top: 1em;
+}
+ 
+ .case-study-upperBlock-block.case-study-white h2::after {
      content: "";
      width: 100%;
      position: absolute;
@@ -1337,6 +1343,13 @@ margin-top: 8px;
     /* top: 0;
      */
 }
+
+.case-study-upperBlock-block.case-study-white h2::after {
+    content: "";
+    background:#fff;
+}
+
+
  img.blockImage, img.blockImage-persona{
      max-width: 1100px;
      width: 75%;
@@ -1400,7 +1413,7 @@ img.interviewProfile-dc{
      background-position: 50%,50%;
 }
  .case-study-pageWrapper2cc, .case-study-pageWrapper2cc-doe  {
-     background: url(images/DC-PURPLE-BLOCK-BG.png);
+    background: linear-gradient(180deg, #9292DB 0%, #6F6FC4 100%);
      background-size: cover;
      background-position: 50% 50%;
 }
@@ -1417,11 +1430,11 @@ img.interviewProfile-dc{
     background-position: 50% 50%;
 }
  .case-study-pageWrapper2bb, .case-study-pageWrapper2cc, .case-study-pageWrapper2zz {
-     padding-bottom: 4em;
-     padding-top: 5.75em;
+     padding-bottom: 2em;
+     padding-top: 1.75em;
 }
  .case-study-pageWrapper2bb, .case-study-pageWrapper2cc {
-     padding-top: 6.25em;
+     padding-top: 1.25em;
 }
  .case-study-pageWrapper2bb, .case-study-pageWrapper2cc {
      color: #fff;
@@ -2230,7 +2243,7 @@ img.interviewPic-SB {
     .case-study-pageWrapper2zz {
         color: #fff;
         font-size: 16px;
-        padding: 0 1em 0 1em;
+        padding: 1em;
     }
 
     .stepsBlock-long2 p, .col-md-4-CH-PERSONA p {
@@ -2257,12 +2270,14 @@ img.interviewPic-SB {
 
     .stepsBlock h2, .stepsBlock-dc h2, .stepsBlock-CHA h2, .stepsBlock-SB h2 {
      
-        line-height: 32px;
+        line-height: 34px;
       
     }
-    .moneyShot img {
-        height: 100%;
-        width: 100%;
+
+    .stepsBlock h2, .stepsBlock-dc h2, .stepsBlock-CHA h2, .stepsBlock-SB h2 {
+    
+        font-size: 32px;
+ 
     }
 
     h2.painPoint{
@@ -2280,6 +2295,24 @@ img.interviewPic-SB {
         font-size: 1em;
        
         line-height: 1.98em;
+    }
+
+    .case-study-upperBlock-block p {
+        margin-top: 0;
+    }
+
+    .case-study-upperBlock-block h2 {
+        margin: 0;
+    }
+
+    img.blockImage, img.blockImage-persona {
+        width: 75%;
+        margin: 1em auto;
+    }
+    .case-study-pageWrapper2bb, .case-study-pageWrapper2cc {
+     
+        background-size: 100%;
+ 
     }
     
 
