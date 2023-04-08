@@ -1664,7 +1664,7 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
     padding: 3.75rem;
 }
 
-.jumbotron-research-SB{
+.jumbotron-research-SB, .jumbotron-research-SB2{
     background:#235577;
    /* background: linear-gradient(180deg, #282727 17.71%, #412646 76.12%, #86279A 100%);*/
     background-image: none;
@@ -1672,6 +1672,8 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
   
 
 }
+
+
 
 .jumbotron{
     border-radius: 0;
@@ -2116,7 +2118,11 @@ img.dc-problem {
 }
 img.interviewPic-CH{
     width:100%;
+    margin-bottom: 1em;
 }
+
+
+
 .case-study-upperBlock p {
 
     width: 100%;
@@ -2318,6 +2324,17 @@ img.interviewPic-SB {
     .moneyShot img {
         height: auto;
         width: 100%;
+    }
+
+
+    .jumbotron-research-SB2{
+        margin:0 0 0 0;
+        padding: 0 0 2em 0;
+    }
+
+    .jumbotron-research-SB2 h2{
+        
+        margin: 0 0 0 1em; 
     }
     
 
