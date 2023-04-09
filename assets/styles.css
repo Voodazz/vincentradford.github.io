@@ -1735,7 +1735,8 @@ padding: .75em 0 1em 0;
  
 .moneyShot img {
    
-    height: 100vh;
+    height: auto;
+    width: 100%;
 }
 
 /*======= THE NEXT PROJECTS CONTAINER=========*/
