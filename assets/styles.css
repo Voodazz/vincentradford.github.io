@@ -41,6 +41,18 @@ div#sub-navbarNav {
     margin-bottom: 0.76em;
 }
 
+a{
+    color: #FF862F;
+}
+a:hover{
+    color: #bb560d
+}
+
+a:visited{
+    color: #FF862F;
+    font-weight: 700;
+}
+
  .navListItems a{
      color:#fff;
 }
@@ -65,6 +77,10 @@ div#sub-navbarNav {
      margin: 0;
     /* display: inline-block;
      */
+ }
+
+ .md-3{
+    margin-bottom: 1rem;
  }
 
 ul.contactEmail{
@@ -1725,15 +1741,22 @@ padding: .75em 0 1em 0;
     padding: 1em;
 }
 
-.moneyShot {
+.moneyShot.moneyShot-SB {
     display: flex;
     margin: 0 auto;
     width: 100%;
    
     /* align-items: start; */
 }
+
+.moneyShot-SB{
+    background:url(images/SB-GYM.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 0 0 0;
+}
  
-.moneyShot img {
+.moneyShot img.moneyShot-SB img {
    
     height: auto;
     width: 100%;
