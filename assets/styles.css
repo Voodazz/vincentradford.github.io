@@ -1016,7 +1016,7 @@ img.dc-problem {
 
     display: block;
     margin: auto;
-    width: 45%; 
+    width: 55%; 
 }
  .problem{
      grid-column: span 2;
@@ -1426,7 +1426,7 @@ img.interviewProfile-dc{
      transition: ease all .5s;
      background-size: cover;
      background-repeat: no-repeat;
-     background-position: 50%,50%;
+     background-position: 0 0%;
 }
  .case-study-pageWrapper2cc, .case-study-pageWrapper2cc-doe  {
     background: linear-gradient(180deg, #9292DB 0%, #6F6FC4 100%);
