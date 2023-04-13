@@ -72,6 +72,24 @@ a:visited{
      max-width: 800px;
      margin: 1em auto;
 }
+ li a.resumeLink
+     {
+        border: 1px solid #fff;
+        padding: 0.56em 0.76em;
+        border-radius: 0.99em;
+        background: #fff;
+        text-transform: uppercase;
+        transition: all 350ms ease-in-out;
+    }
+
+   li a.resumeLink:hover{
+    background: #FF862F;
+    color: #fff;
+    transition: all 350ms ease-in-out;
+   }  
+ 
+
+
  h5 {
      font-size: 19px;
      margin: 0;
