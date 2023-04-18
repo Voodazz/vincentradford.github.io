@@ -2041,6 +2041,13 @@ padding: .75em 0 1em 0;
 
 }
 
+@media (max-width: 640px){
+    ul.contactEmail {
+    
+        font-size: 14px;
+    }
+}
+
  @media (max-width: 599px){
      .tooBlock1 {
          width: 90%;
@@ -2067,6 +2074,12 @@ padding: .75em 0 1em 0;
      .moreInfo{
          width: 83%;
     }
+
+    ul.contactEmail {
+    
+       flex-direction: column;
+    }
+}
 
     
 
