@@ -2085,7 +2085,7 @@ padding: .75em 0 1em 0;
     
 
 
-}
+
  @media (max-width: 500px){
      ul.projectDetails2 li::before {
          content: "";
