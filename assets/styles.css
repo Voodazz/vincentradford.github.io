@@ -916,10 +916,12 @@ max-width: 20%;
 
 header.case-study-mainHeader-CHA{
     background: url(images/CH-BIGCOCKTAILS.png) 0 0 no-repeat;
+    background-size: cover;
 }
 
 header.case-study-mainHeader-SB{
     background: url(images/SB-HEROPIC.png) 50% bottom no-repeat;
+    background-size:cover;
 }
 
  
