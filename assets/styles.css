@@ -141,12 +141,18 @@ ul.socialNavLinks li {
      justify-content: space-between;
      margin: auto;
      width: 95%;
-     padding-bottom:4em;
+     padding-bottom:2em;
 }
  .artBlock1 img {
-     width: 95%;
+    scale: 1; 
+    width: 95%;
      border-radius: 15px;
      margin: 1em 0;
+     transition: all, ease-in-out .25s;
+}
+.artBlock1 img:hover{
+    scale: 1.07;
+    transition: all, ease-in-out .25s;
 }
  .navbar {
      padding: .75rem 1rem!important;
