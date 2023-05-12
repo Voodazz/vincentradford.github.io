@@ -984,7 +984,7 @@ header.case-study-mainHeader-SB{
      width: 4px;
      background: #fff;
      position: absolute;
-     left: -8px;
+     left: -14px;
      top: 0px;
      bottom: 6px;
      border-radius: 16px;
@@ -1208,7 +1208,7 @@ img.dc-problem {
 }
 
 .stepsBlock-CHA h2{
-    margin-bottom: .4em;
+    margin-bottom: .48em;
 }
 
 .stepsBlock-dc h3 {
