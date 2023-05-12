@@ -249,7 +249,7 @@ nav#subMenu {
 
 .moreTools .grid-item img {
     max-width: 75%;
-    padding: 0.35rem 0;
+    padding: 1.34rem 0 .85rem 0;
 }
 
 
@@ -485,7 +485,8 @@ ul.contactEmail a:hover {
      box-sizing: border-box;
      font-size: 1.25em;
      transition: ease all .25s;
-     line-height: 1.75em;
+     line-height: 2em;
+     font-weight: 600;
 }
  section.aboutMe {
      display: flex;
@@ -512,9 +513,11 @@ ul.contactEmail a:hover {
      transition: ease all .5s;
 }
  .pageWrapper2 {
-    background: linear-gradient(180deg, #441757 0%, #591558 71.87%, #9B0F5D 100%);
+    background: linear-gradient(180deg, #2b083a 0%, #591558 71.87%, #9B0F5D 100%);
      color: #fff;
      transition: ease all .5s; 
+
+    
 }
  .pageWrapper2, .pageWrapper3 {
      padding-bottom: 4em;
@@ -558,7 +561,7 @@ ul.aboutDetails{
 }
  .moreInfo h3 {
      font-size: 32px;
-     font-weight: 300;
+     font-weight: 500;
      margin: 0;
 }
  .moreTools {
@@ -580,6 +583,7 @@ ul.aboutDetails{
  .tooBlock1 h5 {
      text-align: center;
      color: #fff;
+     font-size: 1.58em;
 }
  .tooBlock1 {
      width: 33.33%;
@@ -624,6 +628,7 @@ ul.aboutDetails{
      padding: 5.75em 1em 4.75em 1em;
      background: linear-gradient(180deg, #F0D0A8 0%, #FFF8EB 100%);
      box-sizing: border-box;
+     background: #ffffff;
 }
  .case-study-pageWrapper3 h1 {
      margin: 0;
