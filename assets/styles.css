@@ -1890,6 +1890,15 @@ padding: .75em 0 1em 0;
             width: 60%;
         }
 
+        .emailTag{
+            font-weight: 600;
+            background:#ae2f2f;
+            color: #ffffff;
+            width: 40%;
+            border-radius: 16px;
+            padding: .35rem;
+        }
+
 /*============ MEDIA QUERIES=================*/
  @media (max-width: 1273px) {
      section.innerHeader {
@@ -1989,6 +1998,13 @@ padding: .75em 0 1em 0;
     }
  
 }
+
+@media (max-width: 961px){
+    p.emailTag {
+        font-size: 24px;
+        width: 100%;
+    }
+} 
 
  @media (max-width: 920px) {
      section.innerHeader {
@@ -2094,6 +2110,14 @@ padding: .75em 0 1em 0;
     
        flex-direction: column;
     }
+
+   
+        p.emailTag {
+            font-size: 16px;
+            width: 100%;
+        }
+    
+    
 }
 
     
