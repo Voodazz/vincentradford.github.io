@@ -9,6 +9,15 @@ a:link, a:visited, a:hover, a:active{
     text-decoration:none;
 }
 
+ul.SB-list{
+    color: #fff;
+    list-style-type: disc;
+}
+
+ul.SB-list li{
+    padding-bottom: 1em;
+}
+
 div#sub-navbarNav {
     background: #000000;
 }
@@ -1683,6 +1692,7 @@ background: linear-gradient(180deg, #4CAD9C 0%, #8CD5B3 100%);
 
 .jumbotron-compete-SB p {
     color: #f1f1f1;
+    line-height: 2em;
 }
 .jumbotron-priority{
     padding: 3.75rem;
