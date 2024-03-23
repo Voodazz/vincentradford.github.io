@@ -496,7 +496,7 @@ ul.contactEmail a:hover {
      font-size: 1.25em;
      transition: ease all .25s;
      line-height: 2em;
-     font-weight: 600;
+     font-weight: normal;
 }
  section.aboutMe {
      display: flex;
