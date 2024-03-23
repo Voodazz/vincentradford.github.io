@@ -292,7 +292,7 @@ nav#subMenu {
     /* transform: translateY(90%); */
 }
  header.mainHeader {
-     background: url(images/HeroImage.png) 50% bottom no-repeat;
+     background: url(images/newLandingBg.png) 50% bottom no-repeat;
      background-size: cover;
      height: 100vh;
 }
